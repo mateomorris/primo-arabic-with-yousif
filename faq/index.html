@@ -1,118 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
 
-    <!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../styles.css" />
-        
-        <script src="./index.js"></script>
-        <title>Arabic with Yousif</title>
-<meta type="description" content="Knowing Egyptian Arabic makes life in Cairo navigable and more fun! I teach one-on-one lessons that equip foreigners to read and speak Egyptian Arabic confidently and grasp the local lifestyle and culture." />
-        
-      </head>
-      <body data-instant-intensity="all" class="primo-page">   
-        
-      <div class="block" id="block-oeuuc">
-        <div class="primo-component" id="component-oeuuc">
-          <div><div class="container py-6">
-    <a href="/" class="font-semibold text-xl underline">Home</a>
-</div>
-<div class="w-full md:px-4 py-16">
-	<h2 class="text-3xl font-bold text-center leading-none mb-6">Frequently Asked Questions</h2>
-    <ul class="shadow-box container" x-data="{selected:null}">
-            <li class="relative border-b border-gray-100">
-               <button type="button" class="text-xl font-semibold flex w-full justify-between px-8 py-6" @click="selected !== 0 ? selected = 0 : selected = null">
-                    <span class="">How much do lessons cost?</span>	
-                    <template x-if="selected !== 0">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>                    </template>
-                    <template x-if="selected === 0">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>                   
-                    </template>
-               </button>
-               <div class="relative overflow-hidden transition-all h-0 duration-200" x-ref="container0" x-bind:style="selected == 0 ? 'height: ' + $refs.container0.scrollHeight + 'px' : ''">
-                    <div class="p-6"><p>Hourly rate of 16 USD, 14 EU,  250 le, varies by class frequency</p></div>
-               </div>
-            </li>
-            <li class="relative border-b border-gray-100">
-               <button type="button" class="text-xl font-semibold flex w-full justify-between px-8 py-6" @click="selected !== 1 ? selected = 1 : selected = null">
-                    <span class="">What type of Arabic levels do you teach?</span>	
-                    <template x-if="selected !== 1">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>                    </template>
-                    <template x-if="selected === 1">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>                   
-                    </template>
-               </button>
-               <div class="relative overflow-hidden transition-all h-0 duration-200" x-ref="container1" x-bind:style="selected == 1 ? 'height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                    <div class="p-6"><p>I teach all levels from beginner to advanced.</p></div>
-               </div>
-            </li>
-            <li class="relative border-b border-gray-100">
-               <button type="button" class="text-xl font-semibold flex w-full justify-between px-8 py-6" @click="selected !== 2 ? selected = 2 : selected = null">
-                    <span class="">What resources will I need for the lessons?</span>	
-                    <template x-if="selected !== 2">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>                    </template>
-                    <template x-if="selected === 2">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>                   
-                    </template>
-               </button>
-               <div class="relative overflow-hidden transition-all h-0 duration-200" x-ref="container2" x-bind:style="selected == 2 ? 'height: ' + $refs.container2.scrollHeight + 'px' : ''">
-                    <div class="p-6"><p>[Kalimni 'Arabi Series]()- AUC Press</p></div>
-               </div>
-            </li>
-            <li class="relative border-b border-gray-100">
-               <button type="button" class="text-xl font-semibold flex w-full justify-between px-8 py-6" @click="selected !== 3 ? selected = 3 : selected = null">
-                    <span class="">How long is a session? </span>	
-                    <template x-if="selected !== 3">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>                    </template>
-                    <template x-if="selected === 3">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>                   
-                    </template>
-               </button>
-               <div class="relative overflow-hidden transition-all h-0 duration-200" x-ref="container3" x-bind:style="selected == 3 ? 'height: ' + $refs.container3.scrollHeight + 'px' : ''">
-                    <div class="p-6"><p>One session is typically 2 hours but can go up to 5 hours depending on your preference. </p></div>
-               </div>
-            </li>
-            <li class="relative border-b border-gray-100">
-               <button type="button" class="text-xl font-semibold flex w-full justify-between px-8 py-6" @click="selected !== 4 ? selected = 4 : selected = null">
-                    <span class="">How many hours can I book per week? </span>	
-                    <template x-if="selected !== 4">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>                    </template>
-                    <template x-if="selected === 4">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>                   
-                    </template>
-               </button>
-               <div class="relative overflow-hidden transition-all h-0 duration-200" x-ref="container4" x-bind:style="selected == 4 ? 'height: ' + $refs.container4.scrollHeight + 'px' : ''">
-                    <div class="p-6"><p>You can take anywhere from 2 hours to 15 hours per week. </p></div>
-               </div>
-            </li>
-    </ul>
-</div></div>
-          <script type="module">
-    const primo = {
-      id: 'sjokv',
-      data: {"heading":"Frequently Asked Questions","cards":[{"body":"<p>Hourly rate of 16 USD, 14 EU,  250 le, varies by class frequency</p>","title":"How much do lessons cost?"},{"body":"<p>I teach all levels from beginner to advanced.</p>","title":"What type of Arabic levels do you teach?"},{"body":"<p>[Kalimni 'Arabi Series]()- AUC Press</p>","title":"What resources will I need for the lessons?"},{"body":"<p>One session is typically 2 hours but can go up to 5 hours depending on your preference. </p>","title":"How long is a session? "},{"body":"<p>You can take anywhere from 2 hours to 15 hours per week. </p>","title":"How many hours can I book per week? "}],"subheading":"People have questions, here are the answers","bg":{"alt":"","url":"https://raw.githubusercontent.com/mateomorris/arabic-with-yousef/main/assets/Bgtopo.jpg","size":210}},
-      fields: [{"id":"aamr3","key":"heading","type":"text","label":"Heading","value":"Frequently Asked Questions","fields":[]},{"id":"9nw0n","key":"cards","type":"repeater","label":"Cards","value":[{"body":"<p>Hourly rate of 16 USD, 14 EU,  250 le, varies by class frequency</p>","title":"How much do lessons cost?"},{"body":"<p>I teach all levels from beginner to advanced.</p>","title":"What type of Arabic levels do you teach?"},{"body":"<p>[Kalimni 'Arabi Series]()- AUC Press</p>","title":"What resources will I need for the lessons?"},{"body":"<p>One session is typically 2 hours but can go up to 5 hours depending on your preference. </p>","title":"How long is a session? "},{"body":"<p>You can take anywhere from 2 hours to 15 hours per week. </p>","title":"How many hours can I book per week? "}],"fields":[{"id":"wrrh8","key":"title","type":"text","label":"Title","value":""},{"id":"kkiig","key":"body","type":"content","label":"Body","value":""}]},{"id":"l94o4","key":"subheading","type":"text","label":"Subheading","value":"People have questions, here are the answers","fields":[]},{"id":"doaki","key":"bg","type":"image","label":"Background Image","value":{"alt":"","url":"https://raw.githubusercontent.com/mateomorris/arabic-with-yousef/main/assets/Bgtopo.jpg","size":210},"fields":[]}]
-    }
-    import AlpineJS from 'https://cdn.skypack.dev/alpinejs'</script>
+    <script src="./index.js"></script>
+    <title>Arabic with Yousif</title>
+    <meta
+      type="description"
+      content="Knowing Egyptian Arabic makes life in Cairo navigable and more fun! I teach one-on-one lessons that equip foreigners to read and speak Egyptian Arabic confidently and grasp the local lifestyle and culture."
+    />
+  </head>
+  <body data-instant-intensity="all" class="primo-page">
+    <div class="block" id="block-oeuuc">
+      <div class="primo-component" id="component-oeuuc">
+        <div>
+          <div class="container py-6">
+            <a href="/" class="font-semibold text-xl underline">Home</a>
+          </div>
+          <div class="w-full md:px-4 py-16">
+            <h2 class="text-3xl font-bold text-center leading-none mb-6">
+              Frequently Asked Questions
+            </h2>
+            <ul class="shadow-box container" x-data="{selected:null}">
+              <li class="relative border-b border-gray-100">
+                <button
+                  type="button"
+                  class="text-xl font-semibold flex w-full justify-between px-8 py-6"
+                  @click="selected !== 0 ? selected = 0 : selected = null"
+                >
+                  <span class="">How much do lessons cost?</span>
+                  <template x-if="selected !== 0">
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </template>
+                  <template x-if="selected === 0">
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </template>
+                </button>
+                <div
+                  class="relative overflow-hidden transition-all h-0 duration-200"
+                  x-ref="container0"
+                  x-bind:style="selected == 0 ? 'height: ' + $refs.container0.scrollHeight + 'px' : ''"
+                >
+                  <div class="p-6">
+                    <p>
+                      Hourly rate of 16 USD, 14 EU, 250 le, varies by class
+                      frequency
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="relative border-b border-gray-100">
+                <button
+                  type="button"
+                  class="text-xl font-semibold flex w-full justify-between px-8 py-6"
+                  @click="selected !== 1 ? selected = 1 : selected = null"
+                >
+                  <span class="">What type of Arabic levels do you teach?</span>
+                  <template x-if="selected !== 1">
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </template>
+                  <template x-if="selected === 1">
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </template>
+                </button>
+                <div
+                  class="relative overflow-hidden transition-all h-0 duration-200"
+                  x-ref="container1"
+                  x-bind:style="selected == 1 ? 'height: ' + $refs.container1.scrollHeight + 'px' : ''"
+                >
+                  <div class="p-6">
+                    <p>I teach all levels from beginner to advanced.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="relative border-b border-gray-100">
+                <button
+                  type="button"
+                  class="text-xl font-semibold flex w-full justify-between px-8 py-6"
+                  @click="selected !== 2 ? selected = 2 : selected = null"
+                >
+                  <span class=""
+                    >What resources will I need for the lessons?</span
+                  >
+                  <template x-if="selected !== 2">
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </template>
+                  <template x-if="selected === 2">
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </template>
+                </button>
+                <div
+                  class="relative overflow-hidden transition-all h-0 duration-200"
+                  x-ref="container2"
+                  x-bind:style="selected == 2 ? 'height: ' + $refs.container2.scrollHeight + 'px' : ''"
+                >
+                  <div class="p-6">
+                    <p>[Kalimni 'Arabi Series]()- AUC Press</p>
+                  </div>
+                </div>
+              </li>
+              <li class="relative border-b border-gray-100">
+                <button
+                  type="button"
+                  class="text-xl font-semibold flex w-full justify-between px-8 py-6"
+                  @click="selected !== 3 ? selected = 3 : selected = null"
+                >
+                  <span class="">How long is a session? </span>
+                  <template x-if="selected !== 3">
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </template>
+                  <template x-if="selected === 3">
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </template>
+                </button>
+                <div
+                  class="relative overflow-hidden transition-all h-0 duration-200"
+                  x-ref="container3"
+                  x-bind:style="selected == 3 ? 'height: ' + $refs.container3.scrollHeight + 'px' : ''"
+                >
+                  <div class="p-6">
+                    <p>
+                      One session is typically 2 hours but can go up to 5 hours
+                      depending on your preference.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="relative border-b border-gray-100">
+                <button
+                  type="button"
+                  class="text-xl font-semibold flex w-full justify-between px-8 py-6"
+                  @click="selected !== 4 ? selected = 4 : selected = null"
+                >
+                  <span class="">How many hours can I book per week? </span>
+                  <template x-if="selected !== 4">
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </template>
+                  <template x-if="selected === 4">
+                    <svg
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </template>
+                </button>
+                <div
+                  class="relative overflow-hidden transition-all h-0 duration-200"
+                  x-ref="container4"
+                  x-bind:style="selected == 4 ? 'height: ' + $refs.container4.scrollHeight + 'px' : ''"
+                >
+                  <div class="p-6">
+                    <p>
+                      You can take anywhere from 2 hours to 15 hours per week.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <style type="text/css">#component-sjokv h2:after {
-    content: '';
-    --tw-bg-opacity: 1;
-    background-color: rgba(92, 219, 149, var(--tw-bg-opacity));
-    display: block;
-    height: 0.25rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 3rem;
-  }</style>
+        <script type="module">
+          const primo = {
+            id: 'sjokv',
+            data: {"heading":"Frequently Asked Questions","cards":[{"body":"<p>Hourly rate of 16 USD, 14 EU,  250 le, varies by class frequency</p>","title":"How much do lessons cost?"},{"body":"<p>I teach all levels from beginner to advanced.</p>","title":"What type of Arabic levels do you teach?"},{"body":"<p>[Kalimni 'Arabi Series]()- AUC Press</p>","title":"What resources will I need for the lessons?"},{"body":"<p>One session is typically 2 hours but can go up to 5 hours depending on your preference. </p>","title":"How long is a session? "},{"body":"<p>You can take anywhere from 2 hours to 15 hours per week. </p>","title":"How many hours can I book per week? "}],"subheading":"People have questions, here are the answers","bg":{"alt":"","url":"https://raw.githubusercontent.com/mateomorris/arabic-with-yousef/main/assets/Bgtopo.jpg","size":210}},
+            fields: [{"id":"aamr3","key":"heading","type":"text","label":"Heading","value":"Frequently Asked Questions","fields":[]},{"id":"9nw0n","key":"cards","type":"repeater","label":"Cards","value":[{"body":"<p>Hourly rate of 16 USD, 14 EU,  250 le, varies by class frequency</p>","title":"How much do lessons cost?"},{"body":"<p>I teach all levels from beginner to advanced.</p>","title":"What type of Arabic levels do you teach?"},{"body":"<p>[Kalimni 'Arabi Series]()- AUC Press</p>","title":"What resources will I need for the lessons?"},{"body":"<p>One session is typically 2 hours but can go up to 5 hours depending on your preference. </p>","title":"How long is a session? "},{"body":"<p>You can take anywhere from 2 hours to 15 hours per week. </p>","title":"How many hours can I book per week? "}],"fields":[{"id":"wrrh8","key":"title","type":"text","label":"Title","value":""},{"id":"kkiig","key":"body","type":"content","label":"Body","value":""}]},{"id":"l94o4","key":"subheading","type":"text","label":"Subheading","value":"People have questions, here are the answers","fields":[]},{"id":"doaki","key":"bg","type":"image","label":"Background Image","value":{"alt":"","url":"https://raw.githubusercontent.com/mateomorris/arabic-with-yousef/main/assets/Bgtopo.jpg","size":210},"fields":[]}]
+          }
+          import AlpineJS from 'https://cdn.skypack.dev/alpinejs'
+        </script>
       </div>
-      
-        
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.js" integrity="sha256-DdSiNPR71ROAVMqT6NiHagLAtZv9EHeByYuVxygZM5g=" crossorigin="anonymous"></script>
-      </body>
-    </html>
-  
+      <style type="text/css">
+        #component-sjokv h2:after {
+            content: '';
+            --tw-bg-opacity: 1;
+            background-color: rgba(92, 219, 149, var(--tw-bg-opacity));
+            display: block;
+            height: 0.25rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 3rem;
+          }
+      </style>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.js"
+      integrity="sha256-DdSiNPR71ROAVMqT6NiHagLAtZv9EHeByYuVxygZM5g="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
